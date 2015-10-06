@@ -1,0 +1,13 @@
+/* MAIN */
+  Develop & Main Design:Matthias Blomme
+  Twitter:
+  Site:
+
+/* SITE */
+  Last update:
+  Doctype: HTML5
+  IDE:
+
+/* SPECIAL THANKS */
+  Designer:
+  Twitter: 

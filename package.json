@@ -1,0 +1,31 @@
+{
+  "name": "portofolio",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SMACSS",
+    "HTML5",
+    "TypeScript"
+  ],
+  "author": "Matthias Blomme",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-plumber": "^1.0.1",
+    "typescript": "^1.6.2",
+    "gulp-tsc": "^1.1.1"
+  },
+  "files": [
+    "app"
+  ]
+}

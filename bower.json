@@ -1,0 +1,21 @@
+{
+  "name": "portofolio",
+  "version": "0.0.0",
+  "authors": [
+    "Matthias Blomme"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}

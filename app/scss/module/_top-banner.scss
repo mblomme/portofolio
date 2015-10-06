@@ -1,0 +1,49 @@
+.main-header {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../img/front_banner1.jpg") 50%/cover no-repeat;
+
+  .me {
+    border-radius: 50%;
+    border: 5px solid white;
+    background: url("../img/me.jpg") center/100% no-repeat;
+    height:15em;
+    width: 15em;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+  }
+
+  .me-name {
+    border:0.1em solid $color-primary;
+    padding:0.2em;
+    align-self: center;
+    font-family: $font-family--primary;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  .me-oneliner {
+    padding-top:0.2em;
+    align-self: center;
+    font-family: $font-family--primary;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  .me-social-linkedin {
+    display:flex;
+    flex-direction: row;
+    padding-top:0.2em;
+    align-self: center;
+    color: $color-primary;
+    font-weight: 100;
+    font-size: 0.75em;
+  }
+}
+
+

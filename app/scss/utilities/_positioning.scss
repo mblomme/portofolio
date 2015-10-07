@@ -1,0 +1,49 @@
+// Center alignment
+.center-align {
+  text-align: center;
+}
+
+%flex {
+  display: flex;
+}
+.block {
+  display:block;
+}
+.con-column {
+  @extend %flex;
+  flex-direction: column;
+}
+
+.con-row {
+  @extend %flex;
+  flex-direction: row;
+}
+
+.con--align-start {
+  justify-content: flex-start;
+}
+
+.con--align-end {
+  justify-content: flex-end;
+}
+
+.con--align-center {
+  justify-content: center;
+}
+
+.con--align-between {
+  justify-content: space-between;
+}
+
+.align--center {
+  align-self: center;
+}
+
+.align--start {
+  align-self: flex-start;
+}
+
+.con--wrap {
+  flex-wrap: wrap;
+}
+

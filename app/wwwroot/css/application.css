@@ -3,10 +3,41 @@
   display: table;
   clear: both; }
 
-.centered, .grid {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
+.center-align {
+  text-align: center; }
+
+.con-column, .con-row {
+  display: flex; }
+
+.block {
+  display: block; }
+
+.con-column {
+  flex-direction: column; }
+
+.con-row {
+  flex-direction: row; }
+
+.con--align-start {
+  justify-content: flex-start; }
+
+.con--align-end {
+  justify-content: flex-end; }
+
+.con--align-center {
+  justify-content: center; }
+
+.con--align-between {
+  justify-content: space-between; }
+
+.align--center {
+  align-self: center; }
+
+.align--start {
+  align-self: flex-start; }
+
+.con--wrap {
+  flex-wrap: wrap; }
 
 * {
   -moz-box-sizing: border-box;
@@ -185,43 +216,93 @@ table {
   height: 50%; }
 
 .main-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: url("../img/front_banner1.jpg") 50%/cover no-repeat; }
-  .main-header .me {
-    border-radius: 50%;
-    border: 5px solid white;
-    background: url("../img/me.jpg") center/100% no-repeat;
-    height: 15em;
-    width: 15em;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%); }
-  .main-header .me-name {
-    border: 0.1em solid rgba(70, 130, 180, 0.7);
-    padding: 0.2em;
-    align-self: center;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: rgba(70, 130, 180, 0.7); }
-  .main-header .me-oneliner {
-    padding-top: 0.2em;
-    align-self: center;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: rgba(70, 130, 180, 0.7); }
-  .main-header .me-social-linkedin {
-    display: flex;
-    flex-direction: row;
-    padding-top: 0.2em;
-    align-self: center;
-    color: rgba(70, 130, 180, 0.7);
-    font-weight: 100;
-    font-size: 0.75em; }
+  background: url("../img/front_banner1.jpg") 50%/cover no-repeat;
+  height: 50%; }
+
+.me {
+  border-radius: 50%;
+  border: 0.3em solid rgba(70, 130, 180, 0.7);
+  background: url("../img/me.jpg") center/100% no-repeat;
+  height: 10em;
+  width: 10em;
+  margin-top: 5%;
+  margin-bottom: 0.2em; }
+
+.me-name {
+  font: bold 2.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0.1em solid rgba(70, 130, 180, 0.7); }
+
+.me-oneliner {
+  font: 400 1.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.me-social-linkedin {
+  font-weight: 100;
+  font-size: 0.75em; }
+
+.me, .me-name, .me-oneliner, .me-social-linkedin {
+  color: rgba(70, 130, 180, 0.7); }
+
+.about {
+  width: 90%;
+  margin: auto; }
+
+.about-intro {
+  font: 600 1em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: steelblue;
+  margin-left: 3%; }
+
+.about-info {
+  font: 200 0.75em "Century Gothic", Helvetica, Arial, sans-serif;
+  color: steelblue;
+  margin-left: 3%;
+  margin-top: 2em;
+  text-align: left; }
+
+.about-details {
+  margin-top: 2em; }
+
+.about-details-key {
+  font: 600 0.75em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: steelblue;
+  display: inline-block;
+  height: 2em;
+  vertical-align: top; }
+
+.about-details-value {
+  font: 200 0.75em "Century Gothic", Helvetica, Arial, sans-serif;
+  color: steelblue;
+  display: inline-block;
+  height: 2em;
+  vertical-align: bottom; }
+
+#me-details {
+  margin-left: 3%;
+  width: 40%; }
+  #me-details footer p {
+    font: 600 0.75em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: steelblue; }
+
+.section-title {
+  color: steelblue;
+  font: bolder 2em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 0.1em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 0.1em solid steelblue;
+  display: inline-block; }
+
+.interest-section p {
+  font: 600 0.75em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: steelblue; }
+
+.interest {
+  border-radius: 50%;
+  border: 0.3em solid rgba(70, 130, 180, 0.7);
+  background-color: steelblue;
+  height: 6em;
+  width: 6em;
+  margin-top: 1em;
+  left: 1em; }
 
 @media (min-width: 1px) and (max-width: 768px) {
   .is-collapsed-mobile {

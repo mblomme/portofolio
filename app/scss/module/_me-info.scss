@@ -1,0 +1,15 @@
+.me-info-key {
+  font: 600 0.75em  $font-family--primary;
+  color: $color-text;
+  display: inline-block;
+  height: 2em;
+  vertical-align: top;
+}
+
+.me-info-value {
+  font: 200 0.75em  $font-family--secondary;
+  color: $color-text;
+  display: inline-block;
+  height: 2em;
+  vertical-align: bottom;
+}

@@ -1,7 +1,3 @@
-.about {
-  width: 90%;
-  margin: auto;
-}
 .about-intro {
   font: 600 1em  $font-family--primary;
   color: $color-text;
@@ -15,26 +11,12 @@
   margin-top: 2em;
   text-align: left;
 }
-.about-details {
+
+.about-main {
   margin-top: 2em;
 }
-.about-details-key {
-  font: 600 0.75em  $font-family--primary;
-  color: $color-text;
-  display: inline-block;
-  height: 2em;
-  vertical-align: top;
-}
 
-.about-details-value {
-  font: 200 0.75em  $font-family--secondary;
-  color: $color-text;
-  display: inline-block;
-  height: 2em;
-  vertical-align: bottom;
-}
-
-#me-details {
+.about-me {
   margin-left: $min-left-margin;
   width: 40%;
   footer p {

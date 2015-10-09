@@ -1,32 +1,22 @@
 .main-header {
+  height: 50%;
   background: url("../img/front_banner1.jpg") 50%/cover no-repeat;
   height: 50%;
 }
 
-.me {
-  @extend %me--basic;
-  border-radius: 50%;
-  border:0.3em solid $color-primary;
-  background: url("../img/me.jpg") center/100% no-repeat;
-  height:10em;
-  width: 10em;
-  margin-top:5%;
-  margin-bottom: 0.2em;
-}
-
-.me-name {
-  @extend %me--basic;
+.header-title {
+  @extend %header-font-color;
   font: bold 2.5em  $font-family--primary;
   border:0.1em solid $color-primary;
 }
 
-.me-oneliner {
-  @extend %me--basic;
+.header-subtitle {
+  @extend %header-font-color;
   font: 400 1.5em  $font-family--primary;
 }
 
-.me-social-linkedin {
-  @extend %me--basic;
+.header-seo {
+  @extend %header-font-color;
   font-weight: 100;
   font-size: 0.75em;
 }
@@ -34,6 +24,6 @@
 
 // PLACEHOLDERS
 //-----------------------------------------------------------
-%me--basic {
+%header-font-color {
   color: $color-primary;
 }
